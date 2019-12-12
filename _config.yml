@@ -1,0 +1,69 @@
+### Site Settings ###
+title               : Sri Hari Karthick
+description         : >-                               # >- means to ignore newlines until "url:"
+                      "I turn coffee :coffee: into code,
+                      use tabs over spaces
+                      and never broke production."
+
+url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+baseurl             : ""                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
+repository          : Sri-Hari-20/Sri-Hari-20.github.io    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+remote_theme       : YoussefRaafatNasry/portfolYOU@v2.0.0   # uncomment this if you are using it as a remote theme
+
+### Author Info ###
+author:
+  name              : Sri Hari Karthick
+  image             : https://bit.ly/2KCvgVJ
+# behance           : your_username
+# dribbble          : your_username
+  email             : sriharkarthikn@yahoo.in
+# facebook          : your_username
+  github            : Sri-Hari-20
+# gitlab            : your_username
+# instagram         : your_username
+  linkedin          : linkedin.com/in/sri-hari-karthick-76087a165
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
+
+### Posts Permalink ###
+permalink: articles/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+plugins:
+  - jemoji
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
