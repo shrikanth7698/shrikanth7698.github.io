@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Android Developer">
+
+  <title>Shrikanth Ravi</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Shrikanth Ravi</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link  active " href=" /projects/ ">Projects</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /articles/ ">Articles</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /about/ ">About</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /resume/ ">Resume</a>
+          
+        
+      
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1 id="night-mode-button-for-android">Night Mode Button for Android</h1>
+
+<p>Easy to use night mode button with cool day night animation.</p>
+
+<p><img src="https://drive.google.com/uc?id=142Tvn8Elm6oECxlrxuk1JP8xIbELrow_" alt="alt text" /></p>
+
+<h3 id="version">Version</h3>
+<p><a href="https://jitpack.io/#shrikanth7698/Night-Mode-Button"><img src="https://jitpack.io/v/shrikanth7698/Night-Mode-Button.svg" alt="" /></a></p>
+
+<p><br /></p>
+<h3 id="installation">Installation</h3>
+
+<ul>
+  <li>
+    <p><strong>Gradle</strong></p>
+
+    <p>Add it in your root build.gradle at the end of repositories:</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">allprojects</span> <span class="o">{</span>
+      <span class="k">repositories</span> <span class="o">{</span>
+          <span class="o">...</span>
+          <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">'https://jitpack.io'</span> <span class="o">}</span>
+      <span class="o">}</span>
+  <span class="o">}</span>
+</code></pre></div>    </div>
+
+    <p>Add the dependency in your app build.gradle</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">dependencies</span> <span class="o">{</span>
+          <span class="n">implementation</span> <span class="s1">'com.github.shrikanth7698:Night-Mode-Button:V1.0'</span>
+  <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Maven</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Add the JitPack repository to your build file
+  ```gradle
+  &lt;repositories&gt;
+      &lt;repository&gt;
+          &lt;id&gt;jitpack.io&lt;/id&gt;
+          &lt;url&gt;https://jitpack.io&lt;/url&gt;
+      &lt;/repository&gt;
+  &lt;/repositories&gt;
+  ```
+
+  Add the dependency
+  ```gradle
+	&lt;dependency&gt;
+      &lt;groupId&gt;com.github.shrikanth7698&lt;/groupId&gt;
+      &lt;artifactId&gt;Night-Mode-Button&lt;/artifactId&gt;
+      &lt;version&gt;V1.0&lt;/version&gt;
+    &lt;/dependency&gt;
+  ```
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><br /></p>
+<h3 id="usage">Usage</h3>
+
+<p>Drop the Night Mode Button in your XML layout as is shown below:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;com.shrikanthravi.library.NightModeButton</span>
+	<span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+	<span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+	<span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+	<span class="na">android:id=</span><span class="s">"@+id/nightModeButton"</span>
+	<span class="na">android:layout_centerVertical=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>And then in your Activity or fragment</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+        <span class="c1">//Inside onCreate()</span>
+
+         <span class="nc">NightModeButton</span> <span class="n">nightModeButton</span><span class="o">;</span>
+         <span class="nc">RelativeLayout</span> <span class="n">relativeLayout</span><span class="o">;</span>
+
+        <span class="n">relativeLayout</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">rootLayout</span><span class="o">);</span>
+        <span class="n">nightModeButton</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">nightModeButton</span><span class="o">);</span>
+
+        <span class="kd">final</span> <span class="kt">int</span> <span class="n">colorFrom</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getColor</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">color</span><span class="o">.</span><span class="na">white</span><span class="o">);</span>
+        <span class="kd">final</span> <span class="kt">int</span> <span class="n">colorTo</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getColor</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">color</span><span class="o">.</span><span class="na">dark</span><span class="o">);</span>
+
+
+
+        <span class="n">nightModeButton</span><span class="o">.</span><span class="na">setOnSwitchListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">NightModeButton</span><span class="o">.</span><span class="na">OnSwitchListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onSwitchListener</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">isNight</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">isNight</span><span class="o">){</span>
+                    <span class="c1">//Function to change color</span>
+                    <span class="n">animateBackground</span><span class="o">(</span><span class="n">colorFrom</span><span class="o">,</span><span class="n">colorTo</span><span class="o">);</span>
+                    <span class="n">animateStatusActionBar</span><span class="o">(</span><span class="n">getResources</span><span class="o">().</span><span class="na">getColor</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">color</span><span class="o">.</span><span class="na">colorPrimary</span><span class="o">),</span><span class="n">colorTo</span><span class="o">);</span>
+                    <span class="nc">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span><span class="s">"Night Mode On"</span><span class="o">,</span><span class="nc">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+                <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                    <span class="n">animateBackground</span><span class="o">(</span><span class="n">colorTo</span><span class="o">,</span><span class="n">colorFrom</span><span class="o">);</span>
+                    <span class="n">animateStatusActionBar</span><span class="o">(</span><span class="n">colorTo</span><span class="o">,</span><span class="n">getResources</span><span class="o">().</span><span class="na">getColor</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">color</span><span class="o">.</span><span class="na">colorPrimary</span><span class="o">));</span>
+                    <span class="nc">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span><span class="s">"Night Mode Off"</span><span class="o">,</span><span class="nc">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+
+
+</code></pre></div></div>
+<p><br /></p>
+<h3 id="todo">TODO</h3>
+<ol>
+  <li>Color Customization</li>
+  <li>Animation Speed</li>
+  <li>Add Confetti effect</li>
+</ol>
+
+<p><br /></p>
+<h2 id="license">License</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MIT License
+
+Copyright (c) 2018 Shrikanth Ravi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></div></div>
+
+<p><br />
+If you need some help, just <a href="https://github.com/shrikanth7698/Night-Mode-Button/issues">tell me</a>.</p>
+
+<p><br /></p>
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/shrikanth7698/Night-Mode-Button">
+  Check it out
+</a>
+</p>
+
+</div>
+  <div class="mt-auto py-3 text-center">
+  
+  </div>
+
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Shrikanth Ravi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+
+  
+
+  
+
+    
+    
+      
+
+    
+    
+      
+
+    
+    
+
+    
+    <a class="social mx-1"  href="mailto:shrikanthravi.me@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.github.com/shrikanth7698"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.linkedin.com/in/shrikanthravi"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+  
+  
+
+</div>
+
+</footer>
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Card Animation jQuery -->
+<script src="/assets/js/card-animation.js"></script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>

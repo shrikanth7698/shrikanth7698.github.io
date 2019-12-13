@@ -1,0 +1,27 @@
+[
+  
+    {
+      "title"    : "Digital Minimalism",
+      "category" : "",
+      "tags"     : "Social Media, Minimalism, Technology",
+      "url"      : "/articles/digital-minimalism",
+      "date"     : "2019-02-20 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "A better Hello World",
+      "category" : "",
+      "tags"     : "Software Development",
+      "url"      : "/articles/a-better-hello-world",
+      "date"     : "2016-07-23 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "What is version control?",
+      "category" : "",
+      "tags"     : "Version Control",
+      "url"      : "/articles/what-is-version-control",
+      "date"     : "2016-02-09 00:00:00 +0530"
+    } 
+  
+]

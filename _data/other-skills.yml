@@ -1,7 +1,7 @@
-- name: Adobe Photoshop
+- name: Adobe XD
   percentage: 95
   color: info
 
-- name: Adobe Illustrator
+- name: Version Control (Git)
   percentage: 90
   color: success

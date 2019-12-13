@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Android Developer">
+
+  <title>Shrikanth Ravi</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Shrikanth Ravi</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link  active " href=" /projects/ ">Projects</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /articles/ ">Articles</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /about/ ">About</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /resume/ ">Resume</a>
+          
+        
+      
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1 id="chat-view-for-android">Chat View for Android</h1>
+
+<p><img src="https://raw.githubusercontent.com/shrikanth7698/ChatView/master/chatview_library_icon_1.png" width="100" />
+<br />
+This is an Android library which can be used to add chat functionality to your android application with just a few lines of code.
+<br />
+This library is still in beta but will be improved over time.
+<br /></p>
+
+<table>
+  <tr>
+    <td>
+       <img src="https://drive.google.com/uc?id=1NDELjyr1T0Y-JMfFmEFpQvZfT6rRXIX-" width="300" />
+    </td>
+    <td>
+      <img src="https://drive.google.com/uc?id=1w1rgZd5oHaDX_FKRfvCb1ddS_LMzJuHK" width="300" />
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <img src="https://drive.google.com/uc?id=1XzzM3QJjz2IqZ5mrsLKB15q_lelnx9oW" width="300" />
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/shrikanth7698/ChatView/master/Explanation%20Screenshot%202.png" width="300" />
+    </td>
+
+  </tr>
+</table>
+
+<h3 id="version">Version</h3>
+<p><a href="https://jitpack.io/#shrikanth7698/ChatView"><img src="https://jitpack.io/v/shrikanth7698/ChatView.svg" alt="" /></a></p>
+
+<p><br /></p>
+<h3 id="installation">Installation</h3>
+<p>Add this to your root build.gradle at the end of repositories:</p>
+<div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">allprojects</span> <span class="o">{</span>
+    <span class="k">repositories</span> <span class="o">{</span>
+        <span class="o">...</span>
+        <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">'https://jitpack.io'</span> <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Then add dependency</p>
+<div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">'com.github.shrikanth7698:ChatView:v0.1.2'</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="usage">Usage</h3>
+
+<p>Drop the ChatView in your XML layout as is shown below:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;com.shrikanthravi.chatview.widget.ChatView</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">app:showSenderLayout=</span><span class="s">"false"</span>
+        <span class="na">app:leftBubbleLayoutColor=</span><span class="s">"#ff7b7b"</span>
+        <span class="na">app:rightBubbleLayoutColor=</span><span class="s">"@color/colorAccent2"</span>
+        <span class="na">app:leftBubbleTextColor=</span><span class="s">"@android:color/white"</span>
+        <span class="na">app:rightBubbleTextColor=</span><span class="s">"@android:color/black"</span>
+        <span class="na">android:layout_above=</span><span class="s">"@+id/sendLL"</span>
+        <span class="na">app:showSenderName=</span><span class="s">"true"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/chatView"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;/com.shrikanthravi.chatview.widget.ChatView&gt;</span>
+
+</code></pre></div></div>
+<p>don’t forget to add this attribute to your root layout.</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xmlns:app="http://schemas.android.com/apk/res-auto"
+</code></pre></div></div>
+<p>And then in your Activity or Fragment</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">ChatView</span> <span class="n">chatView</span> <span class="o">=</span> <span class="o">(</span><span class="nc">ChatView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">chatview</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p><br />
+Sample code</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//sample code to add message to right</span>
+<span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span> <span class="c1">//message body</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSimpleMessage</span><span class="o">);</span> <span class="c1">//message type</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span> <span class="c1">//message time (String)</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span> <span class="c1">//sender name</span>
+            <span class="c1">//sender icon</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">//sample code to add message to left</span>
+<span class="nc">Message</span> <span class="n">message1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSimpleMessage</span><span class="o">);</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+            <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">//to clear messages</span>
+<span class="n">chatview</span><span class="o">.</span><span class="na">clearMessages</span><span class="o">();</span>
+
+<span class="c1">//to remove message</span>
+<span class="n">chatview</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">position</span><span class="o">)</span> <span class="c1">//or  chatview.remove(message)</span>
+
+
+</code></pre></div></div>
+
+<p><br />
+Message types</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//Message.LeftSimpleMessage</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSimpleMessage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">body</span><span class="o">);</span> <span class="c1">//string</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">//Message.RightSimpleMessage</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSimpleMessage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">body</span><span class="o">);</span> <span class="c1">//string</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">//Message.LeftSingleImage  (when clicked it will go to fullscreen mode)</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">))</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSingleImage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>   
+
+<span class="c1">// Message.RightSingleImage (when clicked it will go to fullscreen mode)</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSingleImage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>    
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">// Message.LeftMultipleImages (can hold upto 10 images in a single row as a collage view)</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftMultipleImages</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">// Message.RightMultipleImages (can hold upto 10 images in a single row as a collage view)</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightMultipleImages</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">// Message.LeftVideo (when clicked it will go to fullscreen mode)   </span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftVideo</span><span class="o">);</span>
+        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setVideoUri</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">getPath</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getData</span><span class="o">())));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+    <span class="n">hatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+<span class="c1">// Message.RightVideo (when clicked it will go to fullscreen mode)</span>
+    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightVideo</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setVideoUri</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">getPath</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getData</span><span class="o">())));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>   
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="sender-layout">Sender Layout</h3>
+<p><img src="https://raw.githubusercontent.com/shrikanth7698/ChatView/master/Sender_Layout.png" width="400" /></p>
+
+<p>You should have a accent color in your colors.xml otherwise view will crash.</p>
+
+<p>You can hide or show sender layout</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+app:showSenderLayout="true or false"
+
+</code></pre></div></div>
+
+<p>This is still in beta</p>
+
+<p>Sender Layout has 4 buttons for now.</p>
+
+<ul>
+  <li>
+    <p>Send Button</p>
+  </li>
+  <li>
+    <p>Camera Button</p>
+  </li>
+  <li>
+    <p>Gallery Button</p>
+  </li>
+  <li>
+    <p>Video Button</p>
+  </li>
+</ul>
+
+<p>and a Text box</p>
+
+<p>You can change the color of buttons by changing the accent color you use in your app.</p>
+
+<p>Note: You should use your own logic of picking images,videos and capturing images.</p>
+
+<p>In this sample I used an external library to pick images from gallery.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c1">//Send button click listerer</span>
+        <span class="n">chatView</span><span class="o">.</span><span class="na">setOnClickSendButtonListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ChatView</span><span class="o">.</span><span class="na">OnClickSendButtonListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onSendButtonClick</span><span class="o">(</span><span class="nc">String</span> <span class="n">body</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">switchbool</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">body</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSimpleMessage</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+
+                    <span class="n">switchbool</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="k">else</span><span class="o">{</span>
+                    <span class="nc">Message</span> <span class="n">message1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">body</span><span class="o">);</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSimpleMessage</span><span class="o">);</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                    <span class="n">message1</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+                    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message1</span><span class="o">);</span>
+
+                    <span class="n">switchbool</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="c1">//Gallery button click listener</span>
+        <span class="n">chatView</span><span class="o">.</span><span class="na">setOnClickGalleryButtonListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ChatView</span><span class="o">.</span><span class="na">OnClickGalleryButtonListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onGalleryButtonClick</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nc">Matisse</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="nc">ChatViewTestActivity</span><span class="o">.</span><span class="na">this</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">choose</span><span class="o">(</span><span class="nc">MimeType</span><span class="o">.</span><span class="na">allOf</span><span class="o">())</span>
+                        <span class="o">.</span><span class="na">countable</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">maxSelectable</span><span class="o">(</span><span class="mi">9</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">restrictOrientation</span><span class="o">(</span><span class="nc">ActivityInfo</span><span class="o">.</span><span class="na">SCREEN_ORIENTATION_UNSPECIFIED</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">thumbnailScale</span><span class="o">(</span><span class="mf">0.85f</span><span class="o">)</span>
+                        <span class="o">.</span><span class="na">imageEngine</span><span class="o">(</span><span class="k">new</span> <span class="nc">PicassoEngine</span><span class="o">())</span>
+                        <span class="o">.</span><span class="na">forResult</span><span class="o">(</span><span class="n">imagePickerRequestCode</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="c1">//Video button click listener</span>
+        <span class="n">chatView</span><span class="o">.</span><span class="na">setOnClickVideoButtonListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ChatView</span><span class="o">.</span><span class="na">OnClickVideoButtonListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onVideoButtonClick</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nc">Intent</span> <span class="n">i</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">Intent</span><span class="o">.</span><span class="na">ACTION_PICK</span><span class="o">,</span> <span class="n">android</span><span class="o">.</span><span class="na">provider</span><span class="o">.</span><span class="na">MediaStore</span><span class="o">.</span><span class="na">Video</span><span class="o">.</span><span class="na">Media</span><span class="o">.</span><span class="na">EXTERNAL_CONTENT_URI</span><span class="o">);</span>
+                <span class="n">i</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="s">"video/*"</span><span class="o">);</span>
+                <span class="n">startActivityForResult</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="no">SELECT_VIDEO</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="c1">//Camera button click listener</span>
+        <span class="n">chatView</span><span class="o">.</span><span class="na">setOnClickCameraButtonListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ChatView</span><span class="o">.</span><span class="na">OnClickCameraButtonListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCameraButtonClicked</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nc">Intent</span> <span class="n">cameraIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">provider</span><span class="o">.</span><span class="na">MediaStore</span><span class="o">.</span><span class="na">ACTION_IMAGE_CAPTURE</span><span class="o">);</span>
+                <span class="nc">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="nc">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">(),</span> <span class="s">"MyPhoto.jpg"</span><span class="o">);</span>
+                <span class="n">file</span><span class="o">.</span><span class="na">delete</span><span class="o">();</span>
+                <span class="nc">File</span> <span class="n">file1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="nc">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">(),</span> <span class="s">"MyPhoto.jpg"</span><span class="o">);</span>
+
+                <span class="nc">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="nc">FileProvider</span><span class="o">.</span><span class="na">getUriForFile</span><span class="o">(</span><span class="nc">ChatViewTestActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">getApplicationContext</span><span class="o">().</span><span class="na">getPackageName</span><span class="o">()</span> <span class="o">+</span> <span class="s">".provider"</span><span class="o">,</span> <span class="n">file1</span><span class="o">);</span>
+                <span class="n">cameraIntent</span><span class="o">.</span><span class="na">putExtra</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">provider</span><span class="o">.</span><span class="na">MediaStore</span><span class="o">.</span><span class="na">EXTRA_OUTPUT</span><span class="o">,</span> <span class="n">uri</span><span class="o">);</span>
+                <span class="n">startActivityForResult</span><span class="o">(</span><span class="n">cameraIntent</span><span class="o">,</span> <span class="no">CAMERA_REQUEST</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onActivityResult</span><span class="o">(</span><span class="kt">int</span> <span class="n">requestCode</span><span class="o">,</span> <span class="kt">int</span> <span class="n">resultCode</span><span class="o">,</span> <span class="nc">Intent</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onActivityResult</span><span class="o">(</span><span class="n">requestCode</span><span class="o">,</span> <span class="n">resultCode</span><span class="o">,</span> <span class="n">data</span><span class="o">);</span>
+
+        <span class="c1">//Image Selection result</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">requestCode</span> <span class="o">==</span> <span class="n">imagePickerRequestCode</span> <span class="o">&amp;&amp;</span> <span class="n">resultCode</span> <span class="o">==</span> <span class="no">RESULT_OK</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">mSelected</span> <span class="o">=</span> <span class="nc">Matisse</span><span class="o">.</span><span class="na">obtainResult</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+
+                <span class="k">if</span><span class="o">(</span><span class="n">switchbool</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="k">if</span> <span class="o">(</span><span class="n">mSelected</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSingleImage</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+                    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightMultipleImages</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span><span class="o">=</span><span class="kc">false</span><span class="o">;</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+                <span class="k">else</span><span class="o">{</span>
+
+                    <span class="k">if</span> <span class="o">(</span><span class="n">mSelected</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">==</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSingleImage</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
+                    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setBody</span><span class="o">(</span><span class="n">messageET</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">().</span><span class="na">trim</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftMultipleImages</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span><span class="o">=</span><span class="kc">true</span><span class="o">;</span>
+                    <span class="o">}</span>
+
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+
+            <span class="c1">//Video Selection result</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">requestCode</span> <span class="o">==</span> <span class="no">SELECT_VIDEO</span> <span class="o">&amp;&amp;</span> <span class="n">resultCode</span> <span class="o">==</span> <span class="no">RESULT_OK</span><span class="o">)</span> <span class="o">{</span>
+
+
+                <span class="k">if</span> <span class="o">(</span><span class="n">switchbool</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightVideo</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setVideoUri</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">getPath</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getData</span><span class="o">())));</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                    <span class="n">switchbool</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                    <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+
+                    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftVideo</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setVideoUri</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">getPath</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getData</span><span class="o">())));</span>
+                    <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+                    <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                    <span class="n">switchbool</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="k">else</span><span class="o">{</span>
+
+                <span class="c1">//Image Capture result</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">requestCode</span> <span class="o">==</span> <span class="no">CAMERA_REQUEST</span> <span class="o">&amp;&amp;</span> <span class="n">resultCode</span> <span class="o">==</span> <span class="no">RESULT_OK</span><span class="o">)</span> <span class="o">{</span>
+
+
+                    <span class="k">if</span> <span class="o">(</span><span class="n">switchbool</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSingleImage</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Groot"</span><span class="o">);</span>
+                        <span class="n">mSelected</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+                        <span class="nc">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="nc">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">(),</span> <span class="s">"MyPhoto.jpg"</span><span class="o">);</span>
+                        <span class="c1">//Uri of camera image</span>
+                        <span class="nc">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="nc">FileProvider</span><span class="o">.</span><span class="na">getUriForFile</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">getApplicationContext</span><span class="o">().</span><span class="na">getPackageName</span><span class="o">()</span> <span class="o">+</span> <span class="s">".provider"</span><span class="o">,</span> <span class="n">file</span><span class="o">);</span>
+                        <span class="n">mSelected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">uri</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/groot"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+                    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                        <span class="nc">Message</span> <span class="n">message</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Message</span><span class="o">();</span>
+
+                        <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSingleImage</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">getTime</span><span class="o">());</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserName</span><span class="o">(</span><span class="s">"Hodor"</span><span class="o">);</span>
+                        <span class="n">mSelected</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+                        <span class="nc">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">File</span><span class="o">(</span><span class="nc">Environment</span><span class="o">.</span><span class="na">getExternalStorageDirectory</span><span class="o">(),</span> <span class="s">"MyPhoto.jpg"</span><span class="o">);</span>
+                        <span class="c1">//Uri of camera image</span>
+                        <span class="nc">Uri</span> <span class="n">uri</span> <span class="o">=</span> <span class="nc">FileProvider</span><span class="o">.</span><span class="na">getUriForFile</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">getApplicationContext</span><span class="o">().</span><span class="na">getPackageName</span><span class="o">()</span> <span class="o">+</span> <span class="s">".provider"</span><span class="o">,</span> <span class="n">file</span><span class="o">);</span>
+                        <span class="n">mSelected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">uri</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+                        <span class="n">message</span><span class="o">.</span><span class="na">setUserIcon</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"android.resource://com.shrikanthravi.chatviewlibrary/drawable/hodor"</span><span class="o">));</span>
+                        <span class="n">chatView</span><span class="o">.</span><span class="na">addMessage</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
+                        <span class="n">switchbool</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                    <span class="o">}</span>
+                <span class="o">}</span>
+
+            <span class="o">}</span>
+
+
+            <span class="o">}</span>
+
+
+        <span class="o">}</span>
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="customization">Customization</h3>
+<p><img src="https://raw.githubusercontent.com/shrikanth7698/ChatView/master/Explanation%20Screenshot%202.png" width="300" /></p>
+
+<p>Note: You can customize the chatview in both xml and java way.</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//xml
+
+<span class="nt">&lt;com.shrikanthravi.chatview.widget.ChatView</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+    <span class="na">app:showLeftBubbleIcon=</span><span class="s">"true or false"</span> <span class="err">//</span>  <span class="err">(4)</span>
+    <span class="na">app:showRightBubbleIcon=</span><span class="s">"true or false"</span> <span class="err">//</span>  <span class="err">(2)</span>
+        <span class="na">app:showSenderLayout=</span><span class="s">"false"</span> <span class="err">//</span> <span class="err">still</span> <span class="err">in</span> <span class="err">beta</span> <span class="err">(set</span> <span class="err">the</span> <span class="err">value</span> <span class="err">to</span> <span class="err">false)</span>
+        <span class="na">app:leftBubbleLayoutColor=</span><span class="s">"#ff7b7b"</span>  <span class="err">//</span>   <span class="err">(5)</span>
+        <span class="na">app:rightBubbleLayoutColor=</span><span class="s">"@color/colorAccent2"</span> <span class="err">//</span>   <span class="err">(3)</span>
+        <span class="na">app:leftBubbleTextColor=</span><span class="s">"@android:color/white"</span> <span class="err">//</span> <span class="err">(5)</span>
+        <span class="na">app:rightBubbleTextColor=</span><span class="s">"@android:color/black"</span> <span class="err">//</span>  <span class="err">(3)</span>
+        <span class="na">android:layout_above=</span><span class="s">"@+id/sendLL"</span>
+    <span class="na">app:textSize=</span><span class="s">"text size"</span>
+    <span class="na">app:chatViewBackground=</span><span class="s">"your color"</span>  <span class="err">//</span>   <span class="err">(10)</span>
+    <span class="na">app:timeTextColor=</span><span class="s">"your color"</span>  <span class="err">//</span>  <span class="err">(11)</span>
+        <span class="na">app:showSenderName=</span><span class="s">"true"</span> <span class="err">//</span>  <span class="err">(1)</span>
+        <span class="na">android:id=</span><span class="s">"@+id/chatView"</span><span class="nt">&gt;</span>
+
+</code></pre></div></div>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//java</span>
+
+
+<span class="c1">//Message.LeftSingleImage      (7)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">))</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftSingleImage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>
+
+<span class="c1">//Message.RightSingleImage    (6)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightSingleImage</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>    
+
+<span class="c1">//Message.LeftMultipleImages (can hold upto 10 images in a single row as a collage view)   (9)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">LeftMultipleImages</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>    
+
+<span class="c1">//Message.RightMultipleImages (can hold upto 10 images in a single row as a collage view)   (8)</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Uri</span><span class="o">&gt;</span> <span class="n">mSelected</span>  <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">mselected</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="nc">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"Your image"</span><span class="o">));</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="nc">Message</span><span class="o">.</span><span class="na">RightMultipleImages</span><span class="o">);</span>
+    <span class="n">message</span><span class="o">.</span><span class="na">setImageList</span><span class="o">(</span><span class="n">mSelected</span><span class="o">);</span>        
+
+
+</code></pre></div></div>
+
+<p><br /></p>
+<h3 id="features">Features</h3>
+<ul>
+  <li>Supports Group mode (Like whatsapp group).</li>
+  <li>Supports multiple images in a single row.</li>
+  <li>Video preview</li>
+  <li>Easily customizable.</li>
+</ul>
+
+<p>Check the sample app https://github.com/shrikanth7698/ChatView/tree/master/app</p>
+
+<p><br /></p>
+<h2 id="upcoming-features">Upcoming features</h2>
+<ul>
+  <li>Video Support (Completed)</li>
+  <li>Location Support</li>
+  <li>Contact support</li>
+</ul>
+
+<p><br /></p>
+<h2 id="contributions-are-welcome">Contributions are welcome</h2>
+
+<p><br /></p>
+<h3 id="license">License</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MIT License
+
+Copyright (c) 2018 Shrikanth Ravi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></div></div>
+
+<p><br />
+If you need some help, just <a href="https://github.com/shrikanth7698/ChatView/issues">tell me</a>.
+<br /></p>
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/shrikanth7698/ChatView">
+  Check it out
+</a>
+</p>
+
+</div>
+  <div class="mt-auto py-3 text-center">
+  
+  </div>
+
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Shrikanth Ravi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+
+  
+
+  
+
+    
+    
+      
+
+    
+    
+      
+
+    
+    
+
+    
+    <a class="social mx-1"  href="mailto:shrikanthravi.me@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.github.com/shrikanth7698"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.linkedin.com/in/shrikanthravi"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+  
+  
+
+</div>
+
+</footer>
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Card Animation jQuery -->
+<script src="/assets/js/card-animation.js"></script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>

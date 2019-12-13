@@ -1,17 +1,14 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Student, SSN College of Engineering
+  from: 2015
+  to: Present
+  description: Information Technology
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Android Developer, GoBumpr, IN
+  from: Jun 2017
+  to: Sep 2017
+  description: Developed a Chatbot UI similar to Google Assistant. Changed the networking library of Gobumpr app to Retrofit.
+
+- title: Android Developer, Eye-D, IN
+  from: Dec 2018
+  to: Jun 2019
+  description: Developed a companion app for smart glasses. Developed several features which is used by many visually impaired people.

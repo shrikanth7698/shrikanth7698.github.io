@@ -1,27 +1,25 @@
 ### Site Settings ###
-title               : Sri Hari Karthick
+title               : Shrikanth Ravi
 description         : >-                               # >- means to ignore newlines until "url:"
-                      "I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production."
+                      Android Developer
 
-url                 : ""                               # base hostname & protocol for your site (e.g. http://example.com)
+url                 : "https://shrikanthravi.me"                               # base hostname & protocol for your site (e.g. http://example.com)
 baseurl             : "/"                    # subpath of your site (e.g. /blog) [IMPORTANT: use "" if your are hosting at https://username.github.io directly]
-repository          : Sri-Hari-20/Sri-Hari-20.github.io    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
+repository          : shrikanth7698/shrikanth7698.github.io    # repository metadata on GitHub Pages [know more at https://help.github.com/en/articles/repository-metadata-on-github-pages]
 #remote_theme       : YoussefRaafatNasry/portfolYOU@v2.0.0   # uncomment this if you are using it as a remote theme
 
 ### Author Info ###
 author:
-  name              : Sri Hari Karthick
-  image             : https://bit.ly/2KCvgVJ
+  name              : Shrikanth Ravi
+  image             : assets/profile.jpeg
 # behance           : your_username
 # dribbble          : your_username
-  email             : sriharkarthikn@yahoo.in
+  email             : shrikanthravi.me@gmail.com
 # facebook          : your_username
-  github            : Sri-Hari-20
+  github            : shrikanth7698
 # gitlab            : your_username
 # instagram         : your_username
-  linkedin          : linkedin.com/in/sri-hari-karthick-76087a165
+  linkedin          : shrikanthravi
 # medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username

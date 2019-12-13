@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Android Developer">
+
+  <title>Shrikanth Ravi</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/"><h5><b>Shrikanth Ravi</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link  active " href=" /projects/ ">Projects</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /articles/ ">Articles</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /about/ ">About</a>
+          
+        
+      
+        
+          
+            <a class="nav-item nav-link " href=" /resume/ ">Resume</a>
+          
+        
+      
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 article">
+  <h1 id="custom-navigation-drawer-for-android">Custom Navigation Drawer for Android</h1>
+
+<p><img src="https://drive.google.com/uc?id=1frkB2g3FGLCBDN6icLGAJ9NM_k4mhCcD" alt="alt text" />
+<a href="https://forthebadge.com"><img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="forthebadge" /></a></p>
+
+<p><a href="https://forthebadge.com"><img src="https://forthebadge.com/images/badges/built-for-android.svg" alt="forthebadge" /></a></p>
+
+<p><a href="https://forthebadge.com"><img src="https://forthebadge.com/images/badges/built-with-swag.svg" alt="forthebadge" /></a></p>
+
+<p><a href="https://ko-fi.com/O5O2BPL1" target="_blank"><img height="36" style="border:0px;height:36px;" src="https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a></p>
+
+<p>It has smooth zoom-in, zoom-out animation when switched from one fragment to another.</p>
+
+<p>Still in Active Development.</p>
+
+<p><a href="https://android-arsenal.com/details/1/6876"><img src="https://img.shields.io/badge/Android%20Arsenal-Custom%20Navigation%20Drawer-green.svg?style=flat" alt="Android Arsenal" /></a></p>
+
+<h3 id="version">Version</h3>
+<p><a href="https://jitpack.io/#shrikanth7698/Custom-Navigation-Drawer"><img src="https://jitpack.io/v/shrikanth7698/Custom-Navigation-Drawer.svg" alt="" /></a>
+<br /></p>
+<h3 id="installation">Installation</h3>
+
+<ul>
+  <li>
+    <p><strong>Gradle</strong></p>
+
+    <p>Add it in your root build.gradle at the end of repositories:</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">allprojects</span> <span class="o">{</span>
+      <span class="k">repositories</span> <span class="o">{</span>
+          <span class="o">...</span>
+          <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">'https://jitpack.io'</span> <span class="o">}</span>
+      <span class="o">}</span>
+  <span class="o">}</span>
+</code></pre></div>    </div>
+
+    <p>Add the dependency in your app build.gradle</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">dependencies</span> <span class="o">{</span>
+          <span class="n">compile</span> <span class="s1">'com.github.shrikanth7698:Custom-Navigation-Drawer:v0.0.1'</span>
+  <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Maven</strong></p>
+
+    <p>Add the JitPack repository to your build file</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="o">&lt;</span><span class="k">repositories</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">repository</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">id</span><span class="o">&gt;</span><span class="n">jitpack</span><span class="o">.</span><span class="na">io</span><span class="o">&lt;/</span><span class="n">id</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="nl">https:</span><span class="c1">//jitpack.io&lt;/url&gt;</span>
+      <span class="o">&lt;/</span><span class="n">repository</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="k">repositories</span><span class="o">&gt;</span>
+</code></pre></div>    </div>
+
+    <p>Add the dependency</p>
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">com</span><span class="o">.</span><span class="na">github</span><span class="o">.</span><span class="na">shrikanth7698</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">Custom</span><span class="o">-</span><span class="n">Navigation</span><span class="o">-</span><span class="n">Drawer</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="n">v0</span><span class="o">.</span><span class="mf">0.1</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="usage">Usage</h3>
+
+<p>Drop the Custom Navigation Drawer in your XML layout as is shown below:</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/navigationDrawer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;FrameLayout</span>
+            <span class="na">android:id=</span><span class="s">"@+id/frameLayout"</span>
+            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+            <span class="na">android:layout_height=</span><span class="s">"match_parent"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer&gt;</span>
+</code></pre></div></div>
+<p>And then in your Activity or fragment</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="c1">//Global Declaration</span>
+        <span class="nc">SNavigationDrawer</span> <span class="n">sNavigationDrawer</span><span class="o">;</span>
+        <span class="nc">Class</span> <span class="n">fragmentClass</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="kd">static</span> <span class="nc">Fragment</span> <span class="n">fragment</span><span class="o">;</span>
+
+        <span class="c1">//Inside onCreate()</span>
+
+        <span class="n">sNavigationDrawer</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">navigationDrawer</span><span class="o">);</span>
+
+        <span class="c1">//Creating a list of menu Items</span>
+
+        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">MenuItem</span><span class="o">&gt;</span> <span class="n">menuItems</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+        <span class="c1">//Use the MenuItem given by this library and not the default one.</span>
+        <span class="c1">//First parameter is the title of the menu item and then the second parameter is the image which will be the background of the menu item.</span>
+
+        <span class="n">menuItems</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">MenuItem</span><span class="o">(</span><span class="s">"News"</span><span class="o">,</span><span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">news_bg</span><span class="o">));</span>
+        <span class="n">menuItems</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">MenuItem</span><span class="o">(</span><span class="s">"Feed"</span><span class="o">,</span><span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">feed_bg</span><span class="o">));</span>
+        <span class="n">menuItems</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">MenuItem</span><span class="o">(</span><span class="s">"Messages"</span><span class="o">,</span><span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">message_bg</span><span class="o">));</span>
+        <span class="n">menuItems</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">MenuItem</span><span class="o">(</span><span class="s">"Music"</span><span class="o">,</span><span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">music_bg</span><span class="o">));</span>
+
+        <span class="c1">//then add them to navigation drawer</span>
+
+        <span class="n">sNavigationDrawer</span><span class="o">.</span><span class="na">setMenuItemList</span><span class="o">(</span><span class="n">menuItems</span><span class="o">);</span>
+        <span class="n">fragmentClass</span> <span class="o">=</span>  <span class="nc">NewsFragment</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">fragment</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Fragment</span><span class="o">)</span> <span class="n">fragmentClass</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">fragment</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">FragmentManager</span> <span class="n">fragmentManager</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">();</span>
+            <span class="n">fragmentManager</span><span class="o">.</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">setCustomAnimations</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">R</span><span class="o">.</span><span class="na">animator</span><span class="o">.</span><span class="na">fade_in</span><span class="o">,</span> <span class="n">android</span><span class="o">.</span><span class="na">R</span><span class="o">.</span><span class="na">animator</span><span class="o">.</span><span class="na">fade_out</span><span class="o">).</span><span class="na">replace</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">frameLayout</span><span class="o">,</span> <span class="n">fragment</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span>
+        <span class="o">}</span>
+
+
+
+        <span class="c1">//Listener to handle the menu item click. It returns the position of the menu item clicked. Based on that you can switch between the fragments.</span>
+
+        <span class="n">sNavigationDrawer</span><span class="o">.</span><span class="na">setOnMenuItemClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">SNavigationDrawer</span><span class="o">.</span><span class="na">OnMenuItemClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMenuItemClicked</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Position "</span><span class="o">+</span><span class="n">position</span><span class="o">);</span>
+
+                <span class="k">switch</span> <span class="o">(</span><span class="n">position</span><span class="o">){</span>
+                    <span class="k">case</span> <span class="mi">0</span><span class="o">:{</span>
+                        <span class="n">fragmentClass</span> <span class="o">=</span> <span class="nc">NewsFragment</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="o">}</span>
+                    <span class="k">case</span> <span class="mi">1</span><span class="o">:{</span>
+                        <span class="n">fragmentClass</span> <span class="o">=</span> <span class="nc">FeedFragment</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="o">}</span>
+                    <span class="k">case</span> <span class="mi">2</span><span class="o">:{</span>
+                        <span class="n">fragmentClass</span> <span class="o">=</span> <span class="nc">MessagesFragment</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="o">}</span>
+                    <span class="k">case</span> <span class="mi">3</span><span class="o">:{</span>
+                        <span class="n">fragmentClass</span> <span class="o">=</span> <span class="nc">MusicFragment</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+                        <span class="k">break</span><span class="o">;</span>
+                    <span class="o">}</span>
+
+                <span class="o">}</span>
+
+                <span class="c1">//Listener for drawer events such as opening and closing.</span>
+                <span class="n">sNavigationDrawer</span><span class="o">.</span><span class="na">setDrawerListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">SNavigationDrawer</span><span class="o">.</span><span class="na">DrawerListener</span><span class="o">()</span> <span class="o">{</span>
+
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDrawerOpened</span><span class="o">()</span> <span class="o">{</span>
+
+                    <span class="o">}</span>
+
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDrawerOpening</span><span class="o">(){</span>
+
+                    <span class="o">}</span>
+
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDrawerClosing</span><span class="o">(){</span>
+                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drawer closed"</span><span class="o">);</span>
+
+                        <span class="k">try</span> <span class="o">{</span>
+                            <span class="n">fragment</span> <span class="o">=</span> <span class="o">(</span><span class="nc">Fragment</span><span class="o">)</span> <span class="n">fragmentClass</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+                        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+                        <span class="o">}</span>
+
+                        <span class="k">if</span> <span class="o">(</span><span class="n">fragment</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="nc">FragmentManager</span> <span class="n">fragmentManager</span> <span class="o">=</span> <span class="n">getSupportFragmentManager</span><span class="o">();</span>
+                            <span class="n">fragmentManager</span><span class="o">.</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">setCustomAnimations</span><span class="o">(</span><span class="n">android</span><span class="o">.</span><span class="na">R</span><span class="o">.</span><span class="na">animator</span><span class="o">.</span><span class="na">fade_in</span><span class="o">,</span> <span class="n">android</span><span class="o">.</span><span class="na">R</span><span class="o">.</span><span class="na">animator</span><span class="o">.</span><span class="na">fade_out</span><span class="o">).</span><span class="na">replace</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">frameLayout</span><span class="o">,</span> <span class="n">fragment</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span>
+
+                        <span class="o">}</span>
+                    <span class="o">}</span>
+
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDrawerClosed</span><span class="o">()</span> <span class="o">{</span>
+
+                    <span class="o">}</span>
+
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDrawerStateChanged</span><span class="o">(</span><span class="kt">int</span> <span class="n">newState</span><span class="o">)</span> <span class="o">{</span>
+                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"State "</span><span class="o">+</span><span class="n">newState</span><span class="o">);</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+</code></pre></div></div>
+<p><br /></p>
+<h3 id="customization">Customization</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer</span>
+        <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+        <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+        <span class="na">app:navigationDrawerBackgroundColor=</span><span class="s">"#151515"</span>
+        <span class="na">app:appbarTitleTextColor=</span><span class="s">"@android:color/white"</span>
+        <span class="na">app:HamMenuIconTintColor=</span><span class="s">"@android:color/white"</span>
+        <span class="na">app:appbarColor=</span><span class="s">"@android:color/black"</span>
+        <span class="na">app:primaryMenuItemTextColor=</span><span class="s">"@android:color/white"</span>
+        <span class="na">app:secondaryMenuItemTextColor=</span><span class="s">"@android:color/white"</span>
+        <span class="na">app:appbarTitleTextSize=</span><span class="s">"7sp"</span>
+        <span class="na">app:primaryMenuItemTextSize=</span><span class="s">"7sp"</span>
+        <span class="na">app:secondaryMenuItemTextSize=</span><span class="s">"7sp"</span>
+        <span class="na">android:id=</span><span class="s">"@+id/navigationDrawer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;FrameLayout</span>
+            <span class="na">android:id=</span><span class="s">"@+id/frameLayout"</span>
+            <span class="na">android:background=</span><span class="s">"@android:color/black"</span>
+            <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+            <span class="na">android:layout_height=</span><span class="s">"match_parent"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;/com.shrikanthravi.customnavigationdrawer2.widget.SNavigationDrawer&gt;</span>
+
+</code></pre></div></div>
+<p><br /></p>
+<h3 id="developed-by">Developed by</h3>
+<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="shrikanthravi"><a class="LI-simple-link" href="https://in.linkedin.com/in/shrikanthravi?trk=profile-badge">Shrikanth Ravi</a></div>
+
+<p><br /></p>
+<h3 id="license">License</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MIT License
+
+Copyright (c) 2018 Shrikanth Ravi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</code></pre></div></div>
+<p><br />
+If you need some help, just <a href="https://github.com/shrikanth7698/Custom-Navigation-Drawer/issues">tell me</a>.
+<br /></p>
+<p class="text-center">
+<a class="m-1 btn btn-outline-primary btn-2 " href="https://github.com/shrikanth7698/Custom-Navigation-Drawer">
+  Check it out
+</a>
+</p>
+
+</div>
+  <div class="mt-auto py-3 text-center">
+  
+  </div>
+
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Shrikanth Ravi</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center">
+
+  
+
+  
+
+    
+    
+      
+
+    
+    
+      
+
+    
+    
+
+    
+    <a class="social mx-1"  href="mailto:shrikanthravi.me@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.github.com/shrikanth7698"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a>
+  
+  
+
+    
+    
+
+    
+    <a class="social mx-1"  href="https://www.linkedin.com/in/shrikanthravi"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+  
+  
+
+</div>
+
+</footer>
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Card Animation jQuery -->
+<script src="/assets/js/card-animation.js"></script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+</body>
+
+</html>
