@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** ,<br><br>
-Undergraduate Engineering Student with Computer Science Major. Passionate about Mobile Application Development with strong interpersonal skills and autodidactic tendencies.
+Currently baking some cool android apps at Zuper. Passionate about Mobile Application Development with strong interpersonal skills and autodidactic tendencies.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
